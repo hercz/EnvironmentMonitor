@@ -1,0 +1,19 @@
+{
+  "name": "serverdemo",
+  "version": "1.0.0",
+  "description": "this is the package for our movierecomander electron app backend testing",
+  "main": "serverdemo.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "multer": "^1.1.0",
+    "serialport": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Misi and the Internet",
+  "license": "ISC"
+}
