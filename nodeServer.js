@@ -3,7 +3,7 @@
  */
 var express = require('express');
 var app = express();
-
+var datas;
 
 var serialport = require('serialport');
 var serialPort = serialport.SerialPort;
@@ -25,19 +25,19 @@ const fs = require('fs');
 
 
 function onData(data) {
+    datas = data;
     console.log('data:' + data);
     var d = new Date();
+    fs.appendFile('data.txt', d.toUTCString() + ',' + data + '\n', 'utf8')
 
-
-    fs.appendFile('data.txt', d.toUTCString() + ',' + data + '\n', 'utf8');
-
-
-    // app.get('/environmentdata', function (req, res) {
-    //     console.log("Got a GET request for /environmentdata");
-    //     res.setHeader('Content-Type', 'application/json');
-    //     res.send(data);
-    // });
+    app.get('/environmentdata', function (req, res) {
+        console.log("Got a GET request for /environmentdata");
+        res.setHeader('Content-Type', 'application/json');
+        res.send(datas);
+    });
 }
+
+
 
 var server = app.listen(8081, function () {
 
