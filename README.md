@@ -4,7 +4,6 @@ Environment Monitor
 
 A little program, which can monitor a room environment (temperature, Humidity). 
 
-----------
 
 
 > **Features:**
@@ -13,7 +12,6 @@ A little program, which can monitor a room environment (temperature, Humidity).
 > - Write that data to a file
 > - Store data in mysql database
 > - Display data in charts
-> - NodeJs
 
 > **Tools:**
 
