@@ -32,7 +32,8 @@ function onData(data) {
 
     app.get('/environmentdata', function (req, res) {
         console.log("Got a GET request for /environmentdata");
-        res.setHeader('Content-Type', 'application/json');
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "X-Requested-With");
         res.send(datas);
     });
 }
