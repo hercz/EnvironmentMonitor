@@ -4,6 +4,8 @@ Environment Monitor
 
 A little program, which can monitor a room environment (temperature, Humidity). 
 
+Thanks to [Imre Lindi](https://github.com/lindi-imre) to show me this world, and for the help! :)
+
 ----------
 
 
