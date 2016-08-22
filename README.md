@@ -37,7 +37,4 @@ A little program, which can monitor a room environment (temperature, Humidity).
 
 > **Sources:**
 > -[How to use DHT-22 sensor - Arduino Tutorial](http://www.instructables.com/id/How-to-use-DHT-22-sensor-Arduino-Tutorial/?ALLSTEPS)
-> [-Angular2 Quick Start](https://angular.io/docs/ts/latest/quickstart.html)
-
-
-
+> -[Angular2 Quick Start](https://angular.io/docs/ts/latest/quickstart.html)
