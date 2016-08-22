@@ -23,7 +23,6 @@ function onOpen() {
 
 const fs = require('fs');
 
-
 function onData(data) {
     datas = data;
     console.log('data:' + data);
@@ -37,8 +36,6 @@ function onData(data) {
         res.send(datas);
     });
 }
-
-
 
 var server = app.listen(8081, function () {
 

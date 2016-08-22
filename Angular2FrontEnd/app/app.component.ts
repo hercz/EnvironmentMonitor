@@ -14,8 +14,6 @@ import {EnvironmentData} from "./EnvironmentData";
     providers: [AppComponentService]
 })
 export class AppComponent implements OnInit{
-
-
     environmentData: EnvironmentData = new EnvironmentData;
     errorMessage: string;
 
@@ -25,7 +23,6 @@ export class AppComponent implements OnInit{
     ngOnInit(){
         this.getDataFromServer();
     }
-
 
     getDataFromServer() {
         this.appComponentService.getDataFromServer()
